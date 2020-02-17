@@ -7,9 +7,8 @@
             "role": "Developer"
         }],
   "require": {
-    "league/oauth2-client":"2.3.0",
-    "cbschuld/browser.php": "dev-master" ,
-    "masterexploder/phpthumb":"dev-master"
+    "guzzlehttp/guzzle":"6.0.0",
+    "cbschuld/browser.php": "1.9.1"   
     },
     
     "autoload": {
