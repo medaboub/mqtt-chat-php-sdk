@@ -10,15 +10,25 @@
 namespace telifoun\mqttchat;
  
  class config{
+     
     /** telifoun mqttchat Client_id **/
     const CLIENT_ID="FX5501";
     /** telifoun mqttchat Client_secret **/
     const CLIENT_SECRET="FX5502";
+         
+    /** telifoun mqttchat rest server **/
+    const MQTTCHAT_REST_SERVER="http://cluster1.telifoun.com/rest" ;
+     
     /** telifoun mqttchat oauth2 server url **/
-    const OAUTH2_TOKEN_URL="http://10.0.0.100/mqttchatserver/oauth2/token";
+    const OAUTH2_TOKEN_URL="/oauth2/token";
     
-    const REST_USERS_URL ="http://10.0.0.100/mqttchatserver/v1.0/users";
-
-    const REST_LOGIN_URL="http://10.0.0.100/mqttchatserver/v1.0/login";
+    const REST_USERS_URL ="/v1.0/users";
+    
+    const REST_FRIENDS_URL="/v1.0/friends";    
+    
+    const REST_SETTINGS_URL="/v1.0/settings";
+    
+    const REST_ACTIONS_URL="/v1.0/actions";
+    
      
  }
