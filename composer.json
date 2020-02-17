@@ -1,0 +1,18 @@
+{    
+  "authors": [
+        {
+            "name": "Gaddour Mohamed",
+            "email": "contact@webplusexpress.com",
+            "homepage": "https://telifoun.mqttchat.com",
+            "role": "Developer"
+        }],
+  "require": {
+    "league/oauth2-client":"2.3.0",
+    "cbschuld/browser.php": "dev-master" ,
+    "masterexploder/phpthumb":"dev-master"
+    },
+    
+    "autoload": {
+        "psr-4": { "telifoun\\mqttchat\\": "src/telifoun/mqttchat"}
+    }
+}
