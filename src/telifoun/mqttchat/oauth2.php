@@ -7,8 +7,7 @@
  */
 namespace telifoun\mqttchat;
 
-class oauth2 {
-    
+class oauth2 {    
    
     /**
      *

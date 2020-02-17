@@ -1,4 +1,10 @@
-{    
+{ 
+  "name": "med_aboub/mqttchat-php-sdk",
+  "type": "library",
+  "description": "MQTTCHAT php sdk",
+  "keywords": ["mqtt","chat"],
+  "homepage": "https://mqttchat.telifoun.com",
+  "license": "MIT",
   "authors": [
         {
             "name": "Gaddour Mohamed",
@@ -7,10 +13,10 @@
             "role": "Developer"
         }],
   "require": {
+    "php": ">=5.3.0",
     "guzzlehttp/guzzle":"6.0.0",
     "cbschuld/browser.php": "1.9.1"   
-    },
-    
+    },    
     "autoload": {
         "psr-4": { "telifoun\\mqttchat\\": "src/telifoun/mqttchat"}
     }
