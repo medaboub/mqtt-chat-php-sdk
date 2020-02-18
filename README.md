@@ -12,3 +12,9 @@ The easiest way is to use php Composer,you should first install <a href="https:/
 
 
 ## Configuration
+
+You must now get your REST authentication parameters **App_ID** and **APP_secret** wich are specific to each domain and are necessary to authenticate with REST services.
+<br>
+To obtain them, you must first create <a href="https://mqttchat.telifoun.com">MQTTCHAT account</a> then activate a free or paied subscription for your domain. Once activation is successful, you will receive in your client area (settings tab) the two parameters App_ID and APP_secret.
+<br>
+yous should add theses twho parameters to config file of your SDK located at :*
