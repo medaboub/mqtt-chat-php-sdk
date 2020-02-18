@@ -34,6 +34,7 @@ namespace telifoun\mqttchat;
 
 ### Add new user
 Adding a new user to MQTTCHAT is done in two steps: first define user basic informations with <code>Set</code> function then add it to your domain users list using <code>Add</code> function.
+
 ```php
 require_once vendor/autoload.php;
 $user=new telifoun\mqttchat\user();
@@ -46,3 +47,16 @@ echo $result["response"]["error"];
 }
 ```
 If you don't like to add profile link or avatar link keep fields empties to be ignored.
+
+### Edit user 
+
+To edit existing user information’s, you should define the userid , informations to update then call <code>Update</code> function.
+
+```php
+require_once vendor/autoload.php;
+$user=new telifoun\mqttchat\user();
+$user->_setUserid(1);
+$user->_setAvatarLink("http://www.exemple.com/images/avatar_men2.png");
+$user->_setName("Foulen 2");
+$result=$user->Update();    
+```
