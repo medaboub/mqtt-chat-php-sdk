@@ -7,9 +7,11 @@ In this documentation we will see differents operations you can do with mqttchat
 ## Setup
 
 Before you can use the SDk, you must install it using PHP Composer or download latest release from this repository and extract it in your website root directory.<br>
-The easiest way is to use php Composer,you should first install <a href="https://getcomposer.org/download/">php composer</a> software then  install the sdk using this command line.<br>
-<code>composer require med_aboub/mqttchat-php-sdk</code>
-
+The easiest way is to use php Composer,you should first install <a href="https://getcomposer.org/download/">php composer</a> software 
+then  install the sdk using this command line.<br>
+```
+composer require med_aboub/mqttchat-php-sdk</code>
+```
 
 ## Configuration
 
@@ -17,4 +19,4 @@ You must now get your REST authentication parameters **App_ID** and **APP_secret
 <br>
 To obtain them, you must first create <a href="https://mqttchat.telifoun.com">MQTTCHAT account</a> then activate a free or paied subscription for your domain. Once activation is successful, you will receive in your client area (settings tab) the two parameters App_ID and APP_secret.
 <br>
-yous should add theses twho parameters to config file of your SDK located at :*
+yous should add theses two parameters to config file of your SDK located at : <code>src/telifoun/mqttchat/config.php</code>
