@@ -39,7 +39,10 @@ require_once vendor/autoload.php;
 $user=new telifoun\mqttchat\user();
 $user->Set(1,"name","surname","profile_link","avatar_link",telifoun\mqttchat\user::GENDER_MALE);
 $result=$user->Add();
-if ($result["response"]["ok"]){
+if ($result["ok"]){
+var_dump($result["response"]);
 }else{
+echo $result["response"]["error"]
 }
 ```
+If you d'ont like to add profile link or avater link keep fields empties to be ignored.
