@@ -20,3 +20,13 @@ You must now get your REST authentication parameters **App_ID** and **APP_secret
 To obtain them, you must first create <a href="https://mqttchat.telifoun.com">MQTTCHAT account</a> then activate a free or paied subscription for your domain. Once activation is successful, you will receive in your client area (settings tab) the two parameters App_ID and APP_secret.
 <br>
 yous should add theses two parameters to config file of your SDK located at : <code>src/telifoun/mqttchat/config.php</code>
+```php
+<?php
+namespace telifoun\mqttchat; 
+ class config{     
+    /** telifoun mqttchat app_id **/
+    const APP_ID="mqttchat-xxxxxxxx";
+    /** telifoun mqttchat app_secret **/
+    const APP_SECRET="mqttchat-xxxxxxxxxxxxxxxx";  
+}    
+```
