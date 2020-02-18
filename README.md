@@ -81,7 +81,7 @@ If you do not use the notion of friends between users, you can skip this section
 If friends option is enabled, all MQTTCHAT features will be limited to the friends list. Else user can browse the list of all users and can chat with any one.<br>
 Please see <a href="https://mqttchat.telifoun.com/doc">MQTTCHAT Documentation</a> for more informations about this.
 
-### Add a new contact to frinds list
+### Add a new contact to friends list
 
 To add a new friend to a user friends list:
 ```php
@@ -101,7 +101,7 @@ $user->_setUserid(1);
 $result=$user->is_Friend_With(2);
 if($result['ok']){
 }
-
+```
 ## Remove contact from friends list
 
 ```php
