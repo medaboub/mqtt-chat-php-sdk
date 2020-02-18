@@ -42,7 +42,7 @@ $result=$user->Add();
 if ($result["ok"]){
 var_dump($result["response"]);
 }else{
-echo $result["response"]["error"]
+echo $result["response"]["error"];
 }
 ```
-If you d'ont like to add profile link or avater link keep fields empties to be ignored.
+If you don't like to add profile link or avatar link keep fields empties to be ignored.
