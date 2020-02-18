@@ -77,4 +77,38 @@ $user->_setUserid(1);
 $result=$user->Remove();
 ```
 ## Friends management
+If you do not use the notion of friends between users, you can skip this section. Since the concept of friends is an MQTTCHAT option for dating or social networks websites.<br>
+If friends option is enabled, all MQTTCHAT features will be limited to the friends list. Else user can browse the list of all users and can chat with any one.<br>
+Please see <a href="https://mqttchat.telifoun.com/doc">MQTTCHAT Documentation</a> for more informations about this.
 
+### Add a new contact to frinds list
+
+To add a new friend to a user friends list:
+```php
+require_once vendor/autoload.php;
+$user=new telifoun\mqttchat\user();
+$user->_setUserid(1);
+$result=$user->friend_With(2);
+if($result['ok']){
+}
+```
+To check if two users are friends:
+
+```php
+require_once vendor/autoload.php;
+$user=new telifoun\mqttchat\user();
+$user->_setUserid(1);
+$result=$user->is_Friend_With(2);
+if($result['ok']){
+}
+
+## Remove contact from friends list
+
+```php
+require_once vendor/autoload.php;
+$user=new telifoun\mqttchat\user();
+$user->_setUserid(1);
+$result=$user->not_Friend_With(2);
+if($result['ok']){
+}
+```
