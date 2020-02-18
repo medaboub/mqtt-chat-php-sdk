@@ -30,3 +30,7 @@ namespace telifoun\mqttchat;
     const APP_SECRET="mqttchat-xxxxxxxxxxxxxxxx";  
 }    
 ```
+## Users Management
+
+### Add new user
+Adding a new user to MQTTCHAT is done in two steps: first define user basic informations with Set function then add it to your domain users list using Add function.
