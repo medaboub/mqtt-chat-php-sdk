@@ -68,3 +68,11 @@ $user=new telifoun\mqttchat\user();
 $user->_setUserid(1);
 $result=$user->Get();
 ```
+### Remove user
+If you want to delete a user, the <code>Remove</code> function is made for that.
+```php
+require_once vendor/autoload.php;
+$user=new telifoun\mqttchat\user();
+$user->_setUserid(1);
+$result=$user->Remove();
+```
