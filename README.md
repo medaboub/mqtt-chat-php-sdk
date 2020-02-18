@@ -76,3 +76,5 @@ $user=new telifoun\mqttchat\user();
 $user->_setUserid(1);
 $result=$user->Remove();
 ```
+## Friends management
+
