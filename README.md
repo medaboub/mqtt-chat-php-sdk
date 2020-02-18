@@ -60,7 +60,7 @@ $user->_setAvatarLink("http://www.exemple.com/images/avatar_men2.png");
 $user->_setName("Foulen 2");
 $result=$user->Update();    
 ```
-And to verify that user information’s are changed, you can use Get function. Do not forget to specify user userid before.
+And to verify that user information’s are changed, you can use <code>Get</code> function. Do not forget to specify user userid before.
 
 ```php
 require_once vendor/autoload.php;
