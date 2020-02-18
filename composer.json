@@ -17,6 +17,6 @@
     "guzzlehttp/guzzle":"6.0.0"   
     },    
     "autoload": {
-        "psr-4": { "telifoun\\mqttchat\\": "src/telifoun/mqttchat"}
-    }
+    "psr-4": { "telifoun\\mqttchat\\": "src/telifoun/mqttchat"}
+  }
 }
