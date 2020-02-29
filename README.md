@@ -10,7 +10,7 @@ Before you can use the SDk, you must install it using PHP Composer or download l
 The easiest way is to use php Composer,you should first install <a href="https://getcomposer.org/download/">php composer</a> software 
 then  install the sdk using this command line.<br>
 ```
-composer require med_aboub/mqttchat-php-sdk</code>
+composer require med_aboub/mqttchat-php-sdk
 ```
 
 ## Configuration
