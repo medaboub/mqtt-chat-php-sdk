@@ -1,7 +1,7 @@
-# mqttchat-php-sdk
+# mqtt-chat-php-sdk
 
 ## Introduction
-Since you do not have direct access to MQTTCHAT databases, you need an SDK as an intermediary to add your users to MQTTCHAT, edit user's informations etc ... The SDK is based on calls to REST services hosted on our web servers. All queries are authenticated using OAuth2 protocol.<br>
+Since you do not have direct access to MQTT CHAT databases, you need an SDK as an intermediary to add your users to MQTT CHAT, edit user's informations etc ... The SDK is based on calls to REST services hosted on our web servers. All queries are authenticated using OAuth2 protocol.<br>
 In this documentation we will see differents operations you can do with mqttchat PHP SDk.
 
 ## Setup
@@ -17,7 +17,7 @@ composer require med_aboub/mqttchat-php-sdk
 
 You must now get your REST authentication parameters **App_ID** and **APP_secret** wich are specific to each domain and are necessary to authenticate with REST services.
 <br>
-To obtain them, you must first create <a href="https://mqttchat.telifoun.com">MQTTCHAT account</a> then activate a free or paied subscription for your domain. Once activation is successful, you will receive in your client area (settings tab) the two parameters App_ID and APP_secret.
+To obtain them, you must first create <a href="https://mqttchat.telifoun.com">MQTT CHAT account</a> then activate a free or paied subscription for your domain. Once activation is successful, you will receive in your client area (settings tab) the two parameters App_ID and APP_secret.
 <br>
 yous should add theses two parameters to config file of your SDK located at : <code>src/telifoun/mqttchat/config.php</code>
 ```php
@@ -77,9 +77,9 @@ $user->_setUserid(1);
 $result=$user->Remove();
 ```
 ## Friends management
-If you do not use the notion of friends between users, you can skip this section. Since the concept of friends is an MQTTCHAT option for dating or social networks websites.<br>
-If friends option is enabled, all MQTTCHAT features will be limited to the friends list. Else user can browse the list of all users and can chat with any one.<br>
-Please see <a href="https://mqttchat.telifoun.com/doc">MQTTCHAT Documentation</a> for more informations about this.
+If you do not use the notion of friends between users, you can skip this section. Since the concept of friends is an MQTT CHAT option for dating or social networks websites.<br>
+If friends option is enabled, all MQTT CHAT features will be limited to the friends list. Else user can browse the list of all users and can chat with any one.<br>
+Please see <a href="https://mqttchat.telifoun.com/doc">MQTT CHAT Documentation</a> for more informations about this.
 
 ### Add a new contact to friends list
 
