@@ -112,3 +112,5 @@ $result=$user->not_Friend_With(2);
 if($result['ok']){
 }
 ```
+
+__For more informations please read the complete <a href="https://mqttchat.telifoun.com/developers/documentation/mqtt-chat-sdks">MQTT CHAT sdk documentation</a>.__
