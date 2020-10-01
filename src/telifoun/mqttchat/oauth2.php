@@ -19,7 +19,7 @@ class oauth2 {
      * @param type $app_secret
      */
     public function __construct(){       
-      $this->_rest_client = new \GuzzleHttp\Client();
+      $this->_rest_client = new \GuzzleHttp\Client(['verify' => false,'http_errors' => false]);
     }       
     
     /**
@@ -30,12 +30,16 @@ class oauth2 {
      * @return type
      */
     public function AuthenticatedRequest($method,$url,$data=array()){  
-     try {  
+     try {
        $res= $this->_rest_client->request($method,$url,[
-           'auth' => [config::APP_ID, config::APP_SECRET],
-           'body' => json_encode($data)
-       ]);        
-       return $res->getBody()->getContents();  
+             'auth' => [config::APP_ID, config::APP_SECRET],
+             'body' => json_encode($data),           
+             'headers' => [
+               'Content-Type' => 'application/json',
+               'Accept' => 'application/json'
+             ], 
+       ]);      
+       return $res->getBody()->getContents(); 
      }catch(\Exception $ex){
       throw new myException ($ex->getMessage(),0);
      }

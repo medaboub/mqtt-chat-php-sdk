@@ -22,7 +22,7 @@ class result{
      * @return type
      */
     static function ko($ex){
-     return array("ok"=>false,"response"=>array("code"=>$ex->getCode(),"error"=>$ex->getMessage()));     
+     return array("ok"=>false,"error"=>$ex->getMessage());     
     }
     
     
