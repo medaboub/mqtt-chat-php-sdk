@@ -18,8 +18,7 @@ namespace telifoun\mqttchat;
     
     
     /** telifoun mqttchat rest server **/
-    const MQTTCHAT_REST_SERVER="http://node2.telifoun.com/api/v1.0" ;    
-     
+    const MQTTCHAT_REST_SERVER="http://node2.telifoun.com/api/v1.0" ;   
    
      /** telifoun mqttchat users url **/
     const REST_USERS_URL ="/users";
