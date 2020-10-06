@@ -62,7 +62,25 @@ class friends {
     }catch (\Exception $ex){
     return result::ko($ex);
     }      
-    }    
+    }   
+    
+    /**
+     * 
+     * @param type $offset
+     * @param type $limit
+     * @return type
+     */
+    public function getAll($offset,$limit){
+    try{  
+    $query=array("offset"=>$offset,"limit"=>$limit);     
+    return result::ok((new oauth2())->AuthenticatedRequest("GET",config::MQTTCHAT_REST_SERVER.config::REST_FRIENDS_URL."/".$this->_userid."/"."?".http_build_query($query)));
+    }catch (\Exception $ex){
+      return result::ko($ex);
+    }      
+    }
+    
+    
+    
    /**
     * 
     */ 
