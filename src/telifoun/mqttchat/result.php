@@ -13,7 +13,7 @@ class result{
      * @param type $data
      * @return type
      */
-    static function ok($data){
+    static function ok($data){       
      return json_decode($data,true);     
     }
     /**
