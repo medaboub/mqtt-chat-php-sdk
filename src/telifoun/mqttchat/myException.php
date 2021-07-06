@@ -6,8 +6,7 @@
  * and open the template in the editor.
  */
 namespace telifoun\mqttchat;
-class myException extends \Exception {
-    
+class myException extends \Exception {    
     
   public function __construct($message, $code = 0)
   {

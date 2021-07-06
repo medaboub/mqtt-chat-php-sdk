@@ -38,7 +38,7 @@ class oauth2 {
                'Content-Type' => 'application/json',
                'Accept' => 'application/json'
              ], 
-       ]);      
+       ]); 
        return $res->getBody()->getContents(); 
      }catch(\Exception $ex){
       throw new myException ($ex->getMessage(),0);

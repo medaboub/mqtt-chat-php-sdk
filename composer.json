@@ -1,9 +1,9 @@
 { 
   "name": "med_aboub/mqttchat-php-sdk",
   "type": "library",
-  "description": "MQTTCHAT php sdk",
+  "description": "MQTT CHAT php sdk",
   "keywords": ["mqtt","chat"],
-  "homepage": "https://mqttchat.telifoun.com",
+  "homepage": "https://mqtt-chat.com",
   "license": "MIT",
   "authors": [
         {
